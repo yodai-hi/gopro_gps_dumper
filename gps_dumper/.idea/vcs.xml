@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/src/github.com/JuanIrache/gopro-utils" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/mlouielu/gpxgo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/paulmach/go.geo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/paulmach/go.geojson" vcs="Git" />
+  </component>
+</project>
