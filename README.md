@@ -4,13 +4,20 @@
 # 必要な環境
 - 動作確認済み環境 -> Mac OS Catalina ver.10.15.1
 - 必要言語：Python3
+- 必要環境：FFmpeg
 
 # 導入方法
+    ==================================================================
+    環境が無いならこれを実行
+    - brew install python3
+    - brew install ffmpeg
+    ==================================================================
     - git clone https://github.com/yodai-hi/gopro_gps_dumper.git
     - cd gopro_gps_dumper
     - pip install -r requirement.txt
     - gopro_gps_dumper/gps_dumper/video/ に抽出したい動画を入れる（複数可）
     - python3 dumper.py
+    
     done
 
 # 抽出データ
