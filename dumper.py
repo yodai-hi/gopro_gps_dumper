@@ -44,6 +44,6 @@ if __name__ == "__main__":
     video_gps_data.to_pickle('./output/video_gps_data.zip')
     video_gps_data.to_csv('./output/video_gps_data.csv')
 
-    # subprocess.run(('sudo', 'rm', '-rf', gps_path+u'/*.bin'), check=True)
+    subprocess.run(('sudo', 'rm', '-rf', gps_path+u'/*.bin'), check=True)
 
     print('all process finished')
