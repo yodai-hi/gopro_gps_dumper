@@ -15,6 +15,5 @@ if [ $# -ge 2 ]; then
     OUT_DIR=$2
 fi
 
-ffmpeg -y -i "${IN_FILE_EXT}" -codec copy -map 0:3 -f rawvideo "${OUT_DIR}/${IN_BASE}.bin"
-${GOPRO2GPX_FILE} -i "${OUT_DIR}/${IN_BASE}.bin" -o "${OUT_DIR}/${IN_BASE}.gpx"
-M
+ffmpeg -y -i "${IN_FILE_EXT}" -codec copy -map 0:3 -f rawvideo "${OUT_DIR}/${IN_BASE}.bin" > /dev/null
+${GOPRO2GPX_FILE} -i "${OUT_DIR}/${IN_BASE}.bin" -o "${OUT_DIR}/${IN_BASE}.gpx" > /dev/null
