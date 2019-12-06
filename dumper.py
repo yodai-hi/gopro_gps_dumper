@@ -12,6 +12,7 @@ if __name__ == "__main__":
     column = ['VIDEO_NAME', 'UNIX_TIME', 'LATITUDE', 'LONGITUDE', 'TIME_SPAN']
     video_gps_data = pd.DataFrame(columns=column)
 
+    # 各ビデオに対して処理をする
     for number, video_name in enumerate(video_list):
         print(video_name+' dumping...')
         subprocess.call(['bash', './gps_dumper/dump_gpx.sh', video_path+'/'+video_name, gps_path])
@@ -26,6 +27,7 @@ if __name__ == "__main__":
             for segment in track.segments:
                 for point in segment.points:
                     indexes.append(name+'_'+str(i))
+                    # GPS data を抽出
                     data = [video_name, point.time.timestamp(), point.latitude, point.longitude]
                     if i == 0:
                         data.append(0)
@@ -41,6 +43,7 @@ if __name__ == "__main__":
         print(str(number+1/video_numbers*100)+'% of all process [{}/{}]'.format(number+1, video_numbers))
         print('==================================================')
 
+    # デー田を保存
     video_gps_data.to_pickle('./output/video_gps_data.zip')
     video_gps_data.to_csv('./output/video_gps_data.csv')
 
