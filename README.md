@@ -1,5 +1,6 @@
 # 概要
 #### このプログラムはGoProの.MP4動画からGPSデータを抽出するプログラムです．
+参考：https://github.com/JuanIrache/gopro-utils
 
 # 必要な環境
 - 動作確認済み環境 -> Mac OS Catalina ver.10.15.1
