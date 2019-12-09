@@ -5,10 +5,9 @@
       <configuration sdkName="Pipenv (route_recommend_service_python_server)" />
     </facet>
   </component>
-  <component name="NewModuleRootManager" inherit-compiler-output="true">
-    <exclude-output />
+  <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 3.8 (algorithm_server)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Pipenv (route_recommend_service_python_server) interpreter library" level="application" />
   </component>
